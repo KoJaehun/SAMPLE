@@ -18,14 +18,49 @@
 		margin: 0;
 		padding: 0;
 	}
+	*{
+		box-sizing: border-box;
+	}
 	body{
-		background-color: #FFFFFF;
-		font-size: 14px;
-		font-family: 'Nanum Gothic', sans-serif;
+		background-color: #fff;
+		padding: 0;
+		margin: 0;
+		font-size: 16px;
+		text-align: center;
 	}
 	div{
 		display: block;
+		align-items: center;
+		border: 1px solid red;
 	}
+	ul, li, button, a{
+		list-style: none;
+		text-decoration: none;
+	}
+
+	/* 헤더 */
+	ul, li, button, a{
+		list-style: none;
+		text-decoration: none;
+	}
+	div.header_wrap{
+		width: 100%;
+		margin: 0 auto;
+		background-color: white;
+		box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+	}
+	div.header_content{
+		width: 1400px;
+		margin: 0 auto;
+		height: 65px;
+		box-sizing: border-box;
+		border-left: 1px solid red;
+		border-right: 1px solid red;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.italy_font{
 		/* font-family: 'Dancing Script', cursive; */
 		font-family: 'Caveat', cursive;
@@ -67,6 +102,14 @@
 
 </style>
 </head>
+<header>
+	<div class="header_wrap">
+		<div class="header_content">
+			<div><h1>Violla Homme</h1></div>
+		</div>
+	</div>
+</header>
+
 <body>
 
 	<div class="wrap">
@@ -86,6 +129,7 @@
 			<div class="margin_line"></div>
 		</div>
 	</div>
+
 
 </body>
 </html>
